@@ -33,11 +33,11 @@ public class ContainsCommonElement {
 //        }
 
         //using two for loops. O(n)
-        for(int i = 0; i < length1; i++){
-            distictSet.add(arr1[i]);
+        for (int k : arr1) {
+            distictSet.add(k);
         }
-        for(int i = 0 ; i< length2; i++){
-            if(distictSet.contains(arr2[i]))
+        for (int j : arr2) {
+            if (distictSet.contains(j))
                 return true;
         }
         return false;
